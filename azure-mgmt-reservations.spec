@@ -4,7 +4,7 @@
 #
 Name     : azure-mgmt-reservations
 Version  : 0.7.0
-Release  : 8
+Release  : 9
 URL      : https://files.pythonhosted.org/packages/2e/f2/55fb1df098b1c1e6f7a1da290787666c336130c0659908d1b704d58c8e37/azure-mgmt-reservations-0.7.0.zip
 Source0  : https://files.pythonhosted.org/packages/2e/f2/55fb1df098b1c1e6f7a1da290787666c336130c0659908d1b704d58c8e37/azure-mgmt-reservations-0.7.0.zip
 Summary  : Microsoft Azure Reservations Client Library for Python
@@ -83,8 +83,8 @@ echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
 ## Remove excluded files
-rm -f %{buildroot}/usr/lib/python3.9/site-packages/azure/mgmt/__init__.py
-rm -f %{buildroot}/usr/lib/python3.9/site-packages/azure/mgmt/__pycache__/__init__.cpython-38.pyc
+rm -f %{buildroot}/usr/lib/python3*/site-packages/azure/mgmt/__init__.py
+rm -f %{buildroot}/usr/lib/python3*/site-packages/azure/mgmt/__pycache__/__init__.cpython-3*.pyc
 
 %files
 %defattr(-,root,root,-)
